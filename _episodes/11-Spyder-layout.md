@@ -94,5 +94,16 @@ There is no ‘best’ way to manage a project, there are general principles tha
 
 4. ***Version control:*** Version control systems (VCS) are a tool that facilitate multiple users collaborating on the same project. They have a wide set of tools but are commonly used to manage reverting files to previous states, comparing changes, and managing versions. Git is the most widely used version control system. 
 
-5. ***Backup:*** Ensuring your data and your project is backed up is vital. Consider a minimum of one local-backup and one online-backup.     
+5. ***Backup:*** Ensuring your data and your project is backed up is vital. Consider a minimum of one local-backup and one online-backup.
+
+
+## Resources
+
+[Spyder tutorials](https://docs.spyder-ide.org/current/videos/first-steps-with-spyder.html)
+
+[Python cheat sheet](https://www.datacamp.com/cheat-sheet/getting-started-with-python-cheat-sheet)
+
+[Getting started with Python](https://www.python.org/about/gettingstarted/)
+
+     
 
