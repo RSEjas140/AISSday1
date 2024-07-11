@@ -1,7 +1,7 @@
 ---
 title: "Spyder Layout, navigating the IDE, project setup"
-teaching: 5
-exercises: 0
+teaching: 10
+exercises: 5
 questions:
 - "How is Spyder laid out?"
 - "How do we create a project and why is it important?"
@@ -18,10 +18,11 @@ keypoints:
 >Let us start by exploring the major features we will use for this course in Spyder. Our first aim is to become more familiar with the interface.  
 >Start by generate a new project (name it **‘my_first_python_project’**).   
 >  
->**Instructions**  
+>**Instructions**
+>* Create a new folder (somewhere sensible) and name it 'AI_summer_school_work'  
 >* From the main menu select **‘File’ > ‘new project’ > ‘new directory’ > ‘new project’**.   
 >* You will be prompted for a directory name for your project and a file path where you want to create the project.   
->* Name your project “OneZoo_PythonIntro" and choose the folder you previously created as part of your set-up worksheet.
+>* Name your project “AISummerSchool" and choose the folder you previously created.
 >* Save the script file (name it **'my_first_python_script’**).  
 
 {% include figure.html max-width="100%" file="/fig/spyderIDE.png" 
