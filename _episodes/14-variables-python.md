@@ -55,7 +55,7 @@ my_name = "your name"
 {: .language-python}
 
 ```
-likes_rstudio = TRUE
+likes_spyder = TRUE
 ```
 {: .language-python}
   
