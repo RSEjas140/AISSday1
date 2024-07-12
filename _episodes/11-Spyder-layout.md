@@ -15,12 +15,11 @@ keypoints:
 ---
 
 ## Starting a new project:
->Let us start by exploring the major features we will use for this course in Spyder. Our first aim is to become more familiar with the interface.  
->Start by generate a new project (name it **‘my_first_python_project’**).   
+>Let us start by exploring the major features we will use for this course in Spyder. Our first aim is to become more familiar with the interface.   
 >  
 >**Instructions**
 >* Create a new folder (somewhere sensible) and name it 'AI_summer_school_work'  
->* From the main menu select **‘File’ > ‘new project’ > ‘new directory’ > ‘new project’**.   
+>* From the main menu select **‘File/Projects’ > ‘new project’ > ‘new directory’ > ‘new project’**.   
 >* You will be prompted for a directory name for your project and a file path where you want to create the project.   
 >* Name your project “AISummerSchool" and choose the folder you previously created.
 >* Save the script file (name it **'my_first_python_script’**).  

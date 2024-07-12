@@ -23,7 +23,7 @@ FAQ sessions: demonstrators/attendees email jas140@aber.ac.uk with any good/comm
 
 > ## Prerequisites
 >
-> * If use their own laptops, participants need to have complete pre-worksheet to ensure all the software and packages needed for this course are installed.
+> * If using your own laptops, participants need to have complete the pre-worksheet to ensure all the software and packages needed for this course are installed.
 > * Participants understand file management on their operating system.
 {: .prereq}
 

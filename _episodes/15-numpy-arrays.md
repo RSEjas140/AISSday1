@@ -81,6 +81,10 @@ temperatures[0] = 20.5
 ```
 {: .languge.python}
 
+
+{% include figure.html max-width="75%" file="/fig/indexat0.webp" 
+alt="Index starts at 0" caption="Figure: Indexing starts from 0 in Numpy arrays" %}
+
 **Be aware Python indexing starts at 0.**
 
 We can access the last item in the array using:

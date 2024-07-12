@@ -78,3 +78,26 @@ my_dict['city'] = 'Los Angeles' # Updates the value of 'city' key to 'Los Angele
 ```
 {: .language-python}
 
+## Overview
+
+### When to Use Lists:
+
+* **Keep Things in Order**: Use lists if you need to keep things in a specific order. For example, a list of values that you want to keep in the order you added them.
+* **Access by Position**: Lists are great if you want to get items by their position, like getting the first, second, or third item.
+* **Easy to Add/Go Through Items**: If you just need to add items to the end or iterate items one by one, lists are a good choice.
+
+### When to Use Dictionaries:
+
+* **Key-Value Pairs**: Use dictionaries if you need to match up pairs of information (e.g., names and phone numbers, or words and their meanings).
+* **Quick Lookups**: Dictionaries are super fast at finding items if you know the key (e.g., looking up a phone number if you have the name).
+* **Flexible Adding/Removing**: It's easy to add or remove items in dictionaries particularly with large amounts of data.
+
+### In simple terms:
+
+Lists are like an ordered group of things where you can easily get the item by its position.
+Dictionaries are like a phone book where you can easily find a value if you have the key.
+
+> ## How would have counting the words in the text example have worked if we had used a list?
+> Think about how we would have checked if a word existed in our list?
+{: .challenge}
+
