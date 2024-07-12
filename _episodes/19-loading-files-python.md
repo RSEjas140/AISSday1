@@ -1,5 +1,5 @@
 ---
-title: "Loading data into Python using Spyder"
+title: "Re-visiting our examples"
 teaching: 5
 exercises: 5
 questions:
@@ -10,31 +10,29 @@ keypoints:
 - "Loading in the data is just the first step"
 ---
 
-### Loading your data
-Getting your data into Python using Spyder is the first step to doing something interesting with it. Click both links below to download both datasets.
+### Text example
 
-[Download File](../fig/gapminder_data.csv)  
-
-[Download File](../fig/iris.csv)
-
-Place them in a folder (name the folder ‘data’) and change the file permissions of the dataset to read-only. The easiest way to achieve this is to find the document in your file management system, inspect its properties, and apply read-only.
-
->Note: You can also do this through the command line using ‘attrib +r’ for windows or ‘chomd 444’ for linux/mac. 
->This is only recommended if you have prior experience working in the command line.
-
-To load our file, in the console, type:
 
 ```
-pip install pandas # if you have not installed pandas before
-import pandas as pd
+with open( "data/bed_time_stories/2. Who is the thief.txt", encoding='utf-8') as story:
 ```
 {: .language-python}
 
-### Load the Iris dataset
+
 ```
-iris_df = pd.read_csv("data/iris.csv") #depending on os and project setup
+with open( "data/bed_time_stories/2. Who is the thief.txt", encoding='utf-8') as story:
 ```
 {: .language-python}
 
-This is a simple introduction to getting your data into Python using Spyder. In some cases, there will be significant complications (e.g., many files, large data size, unusual file format, etc.). In cases like this, Python libraries such as glob, pathlib and pandas have tools to help.
+Keyword: **with**
+In Python this is used extensively for file handling.
+
+Function: **open**
+We are going to open a file. We provide the file path and the encoding.
+
+Keyword: **as**
+We need to name our file so we can refer to it.
+
+Variable name: **story**
+We chose this variable name, we will talk about variables and their naming in length later. For now all you need to know is that we choose this name and anytime in the code we use this name we are talking about the file we just opened.
 

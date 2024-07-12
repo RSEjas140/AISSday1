@@ -15,9 +15,8 @@ keypoints:
 ---
 
 ## Starting a new project:
-> First, if you haven't already, open up Navigator and choose or create an environment. We do not want to 'pollute our base'. Open Spyder for this environment. Let's set up a project.
->   
->  
+First, if you haven't already, open up Navigator and choose or create an environment. We do not want to 'pollute our base'. Open Spyder for this environment. Let's set up a project.
+    
 >**Instructions**
 >* Create a new folder (somewhere sensible) and name it 'AI_summer_school_work'  
 >* From the main menu select **‘File/Projects’ > ‘new project’ > ‘new directory’ > ‘new project’**.   
@@ -29,7 +28,7 @@ keypoints:
 alt="Spyder pane layout on first initialisation" caption="Figure 1: Spyder layout you should expect to see (OS and version dependant)" %}
 
 
->Let us start by exploring the major features we will use for this course in Spyder. Our first aim is to become more familiar with the interface.
+Let us start by exploring the major features we will use for this course in Spyder. Our first aim is to become more familiar with the interface.
 
 >## Top
 >* **Menu Bar:**  
