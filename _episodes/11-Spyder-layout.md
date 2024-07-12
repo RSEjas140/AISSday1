@@ -18,10 +18,9 @@ keypoints:
 First, if you haven't already, open up Navigator and choose or create an environment. We do not want to 'pollute our base'. Open Spyder for this environment. Let's set up a project.
     
 >**Instructions**
->* Create a new folder (somewhere sensible) and name it 'AI_summer_school_work'  
->* From the main menu select **‘File/Projects’ > ‘new project’ > ‘new directory’ > ‘new project’**.   
->* You will be prompted for a directory name for your project and a file path where you want to create the project.   
->* Name your project “AISummerSchool" and choose the folder you previously created.
+>* Create a new folder (somewhere sensible) and name it 'Python_Projects'. *If you already have a location like this setup you can skip this step*. 
+>* From the main menu in Spyder select **‘File/Projects’ > ‘new project’**, In the popup box select ‘**existing directory**’.     
+>* Name your project “test_project" and choose the folder you previously created.
 >* Save the script file (name it **'my_first_python_script’**).  
 
 {% include figure.html max-width="100%" file="/fig/spyderIDE.png" 
