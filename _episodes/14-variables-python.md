@@ -19,7 +19,7 @@ keypoints:
 We don’t just want Spyder to be our calculator. We want to be able to store and manipulate data in a meaningful way. We want to perform operations on data, possibly many times. It would be useful to have a clarity and context for the data we are using; ideally descriptive names to make our data more manageable.
 
 ### Data types 
-Python utilises different data types to efficiently store and manipulate different kinds of data. Python is dynamical typed; this means that you do not need to specify a data type when you declare a variable. You can give the variable name and the data you want to store and let Python worry about how it deals with that. We will look at the most common data types in Python.
+Python utilises different data types to efficiently store and manipulate different kinds of data. Python is dynamically typed; this means that you do not need to specify a data type when you declare a variable. You can give the variable name and the data you want to store and let Python worry about how it deals with that. We will look at the most common data types in Python.
   
 | Data Type       | Description                                     | Example                     |
 |-----------------|-------------------------------------------------|-----------------------------|
@@ -55,12 +55,12 @@ my_name = "your name"
 {: .language-python}
 
 ```
-likes_spyder = TRUE
+likes_spyder = True
 ```
 {: .language-python}
   
 
-Now we have created some variables we can try refering to them in the console. Type:  
+Now we have created some variables we can try referring to them in the console, type:  
 
 ```
 x + 5
@@ -74,7 +74,7 @@ x + 5
 
 
 > ## What does the variable explorer say about variable x?
-> You should notice that the variable 'x' has not changed it's value to 15.
+> You should notice that the variable 'x' has not changed its value to 15.
 {: .challenge}
 
 Now try:
@@ -85,14 +85,24 @@ x = x + 5
 
 When you check the variable again in the variable explorer tab you should now notice that it is 15. This is a key concept to recognise; we can perform an operation and the resulting output will be shown but unless we explicitly assign it the change will not be saved.
 
+> ## Question: What alternative did we see in '*textexample.py*'?
+> You may remember this line:
+> '*word_dict[word] += 1*'
+> This is the equivelent of saying '*word_dict[word] = word_dict[word] + 1*'
+> How could we edit '*x = x + 5*' to take advantage of this shorthand
+{: .challenge }
+
 ## Variable naming
+
+{% include figure.html max-width="100%" file="/fig/variablenaming.png" 
+alt="How variable naming works" caption="Figure: How variable naming works" %}
 
 Variable naming is important but often overlooked by new programmers (and experienced programmers). It is not trivial to think of meaningful concise variable names. The first thing to understand is that Python has some restrictions and rules for variable naming:  
 
  
-* Variable names are cases sensitive (My_name is different to my_name).  
+* Variable names are cases-sensitive (My_name is different to my_name).  
 
-* They must start with a letter or a underscore. 
+* They must start with a letter or an underscore. 
 
 * They can consist of letters, numbers, periods, and underscores.  
 
@@ -184,4 +194,4 @@ x
 
 ### Summary
 
-Most of the time data types will not be of great concern to you. However, it is worth remembering that when you ask Pyton to read and organise data, unless you are explicity, you are asking it to make assumptions on the data types.
+Most of the time data types will not be of great concern to you. However, it is worth remembering that when you ask Pyton to read and organise data, unless you are explicit, you are asking it to make assumptions on the data types.
