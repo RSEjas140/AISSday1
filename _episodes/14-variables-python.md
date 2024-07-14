@@ -197,4 +197,4 @@ x
 
 ### Summary
 
-Most of the time data types will not be of great concern to you. However, it is worth remembering that when you ask Pyton to read and organise data, unless you are explicit, you are asking it to make assumptions on the data types.
+Most of the time data types will not be of great concern to you. However, it is worth remembering that when you ask Python to read and organise data, unless you are explicit, you are asking it to make assumptions on the data types.

@@ -1,7 +1,7 @@
 ---
 title: "Spyder Layout, navigating the IDE, project setup"
 teaching: 10
-exercises: 5
+exercises: 10
 questions:
 - "How is Spyder laid out?"
 - "How do we create a project and why is it important?"

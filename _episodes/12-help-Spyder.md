@@ -1,7 +1,7 @@
 ---
 title: "Loading a project"
-teaching: 15
-exercises: 5
+teaching: 10
+exercises: 10
 questions:
 - "How do I load a project?"
 - "How well can you read/understand simple code blocks?"
@@ -13,6 +13,9 @@ keypoints:
 - "Inheriting projects is common, but they will not always come in this format"
 - "Being able to read, understand, and run code that you did not write is not trivial."
 ---
+
+## Important note
+At this point, we are not trying to fully understand the code examples that follow. We are going to use them as a starting point to provide context for the material we learn today. If you are completely new to Python, it is not unexpected for this to feel and look intimidating but we want to provide some small examples that indicate how much can be achieved with only a few lines of code.   
 
 ## How do I load a project?
 
