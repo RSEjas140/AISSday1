@@ -4,10 +4,14 @@ teaching: 10
 exercises: 5
 questions:
 - "How do I load a project?"
+- "How well can you read/understand simple code blocks?"
 objectives:
-- "Comfortable with loading projects and navigating their structure"
+- "Become comfortable with loading projects and navigating their structure"
+- "Become able to run code"
+- "Become able to install library dependancies"
 keypoints:
-- "Inheriting projects is common, they will not always come in this format"
+- "Inheriting projects is common, but they will not always come in this format"
+- "Being able to read, understand, and run code that you did not write is not trivial."
 ---
 
 ## How do I load a project?
@@ -19,11 +23,11 @@ alt="Spyder project pane" caption="Figure: Spyder layout once you have opened th
 
 ### What is this project?
 
-This project includes **three** kinds of data (*tabular*, *images*, & *text*). It also includes three simple, nieve code snippits that do something mildly interesting. These examples are designed to be readable and straight-forward and serve as teaching tools more than examples of good practice. Throughout the two days you can modify these examples to make them more efficient and practical. If you are more confident with Python you may want to experiment will all three examples, if you are not you may want to concentrate on a single one. We will be using all three throughout the two days to illustrate learning points.   
+This project includes **three** types of data (*tabular, images,* and *text*). It also features three simple, naïve code snippets that perform mildly interesting tasks. These examples are designed to be readable and straightforward, serving more as teaching tools than examples of best practice. Over the two days, you can modify these examples to make them more efficient and practical. If you are more confident with Python, you may want to experiment with all three examples; if not, you might prefer to concentrate on just one. We will use all three examples throughout the two days to illustrate key learning points. 
 
 ### Let's explore
 
-Start with '**textexample.py**'. We can run this code by pressing the green play button that we saw in the previous session. If all goes well you should see an output:
+Start with '**textexample.py**'. You can run this code by pressing the green play button that we saw in the previous session. If all goes well, you should see an output:
 
 ```
 Top 10 words by occurance:
@@ -31,9 +35,9 @@ Top 10 words by occurance:
 ```
 {: .output}
 
-Based on the output and the description/notes we can make an educated guess at what is going on here. Python is relatively readable as far as programming languages go, so even with little to no experience you should be able to understand the flow of what is going on.
+Based on the output and the accompanying description/notes, we can make an educated guess about what is happening here. Python is relatively readable compared to other programming languages, so even with little to no experience, you should be able to understand the flow of the code.
 
-Let's move on to '**imageexample.py**'. When you try to run this the same way you ran the previous code you most likely will recieve an error.
+Let’s move on to **'imageexample.py'**. When you try to run this code in the same way as the previous one, you are most likely to receive an error.
 
 ```
 Traceback (most recent call last):
@@ -48,30 +52,59 @@ ModuleNotFoundError: No module named 'cv2'
 ```
 {: .output}
 
-This is a really common problem when you are inheriting code from someone and you are not familiar with coding. What this error is telling us is that the **library** we are trying to import can not be found.
+This is a common problem when inheriting code from someone else, especially if you are not familiar with coding. The error indicates that the library we are trying to import cannot be found.
 
 >**Context of libraries**
-> We do not want to be constantly re-inventing the wheel. People before us have created code that does all kinds of very useful things that we do not want to waste our time duplicating from scratch. Coders before us have created libraries of this code and we can import that into our projects and use it.
+> We don’t want to constantly reinvent the wheel. Others have already created code that performs various useful tasks, and we don't want to waste time duplicating this work from scratch. Instead, developers have created libraries containing this code, which we can import into our projects and use.
 
 **To fix**
 
-We need to install the packages into our environment, we will spend more time exploring environments and packages but for now all you need to know is that we need to install the package into any environment we want to use it in.
+We need to install the packages into our environment. We will spend more time exploring environments and packages later, but for now, all you need to know is that the package must be installed in any environment where you want to use it.
 
-**NB** - These instructions are for use of Spyder with Annaconda Navigator and from our experience causes the least amount of error and conflicts on peoples machines. If you are using your own set-up this may not work as intended so you will have to install packages the way that you would normally or you will need to get a demonstrator to help you. 
+>## Important
+>* **Spyder and Anaconda specific**  
+>These instructions are for using Spyder with Anaconda Navigator, which, from our experience, causes the fewest errors and conflicts on people's machines. If you are using your own setup, this method may not work as intended, so you will need to install packages in the way you normally would or seek assistance from a demonstrator. 
+{: .callout}
+
 
 ```
 pip install opencv-python
 ```
 {: .language-python}
 
-Type this command into the console and give Spyder time to find and install the package. If it has installed correctly you should now be able to run the code and you should be presented with an image of some leaves, if you press any button that image will be replaced by an image of just the lines detected in that image.
+Type this command into the console and give Spyder time to find and install the package. If the installation is successful, you should now be able to run the code. When it runs you should be presented with an image of some jute leaves. Pressing any button will replace the jute leaves with an image now showing only the lines that have detected in the image.
 
 {% include figure.html max-width="100%" file="/fig/leaves.png" 
-alt="Leaves and the lines in the leaves image" caption="Figure: The output you should get when running the imageexample.py" %}
+alt="Leaves and the lines in the leaves image" caption="Figure: The two outputs you should see when running imageexample.py" %}
 
-Press any key and the second image will close.
 
-It may seem like we are achieving a lot with very few lines of code. That is because all the heavy lifting is being done by *cv2.Canny*. This is a function we have imported from openCV. We will look at functions in more detail but for now you can just imaging that we are calling some other code stored elsewhere 
+### You will need to press any key to close each image after it displays.
+
+It may seem like we are achieving a lot with very few lines of code. This is because the heavy lifting is done by cv2.Canny, a function imported from OpenCV. We will explore functions in more detail later, but for now, you can think of it as we are using code that is stored elsewhere.
+
+
+## Last example
+
+From the Script pane bar select 'tabularexample.py'.
+
+> ## Question: Can you get this code to run?
+> You may need 'pip install pandas' and 'pip install matplotlib'.
+{: .challenge }
+
+Once you have installed the libraries, you should be able to run this example. If you check the Plots Pane, you should see a plot illustrating the relationship between petal length and petal width in the dataset.
+
+>## Tip
+>* **We can make plotting display in a new window**  
+> From the Menu bar select '*tools*' > '*preferences*' >'*IPython console*' > '*Graphics*' > change Backend to '*Automatic*' press 'Apply'.
+{: .callout}
+
+{% include figure.html max-width="100%" file="/fig/inline.png" 
+alt="Spyder iconsole pane" caption="Figure: How to change plots to an external pane" %}
+
+
+Here is the revised text with improved clarity, UK spelling, and grammar:
+
+Run the code again (you may need to restart Spyder), and the plot should now generate in a new window that you may find easier to manipulate/view.
 
 
 
