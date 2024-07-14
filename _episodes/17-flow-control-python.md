@@ -212,9 +212,9 @@ else:
 {: .challenge }
 
 Boolean operators have an order of operations in Python (think back to PEDMAS). The order of precedence is the same as we introduced them earlier. 
-* Not
-* And
-* Or
+1. Not
+2. And
+3. Or
 
 > ## Can you fix the problem using brackets?
 > Use some trial and error, changing varaibles if it is not clear to you why the code is not working as intended.
