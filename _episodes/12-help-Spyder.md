@@ -1,6 +1,6 @@
 ---
 title: "Loading a project"
-teaching: 10
+teaching: 15
 exercises: 5
 questions:
 - "How do I load a project?"

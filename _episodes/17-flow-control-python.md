@@ -1,7 +1,7 @@
 ---
 title: "Flow control"
-teaching: 25
-exercises: 5
+teaching: 30
+exercises: 10
 questions:
 - "How do we get our code to react dynamically?"
 - "How do we delegate repetitive tasks and decisions?"
@@ -217,11 +217,11 @@ Boolean operators have an order of operations in Python (think back to PEDMAS). 
 3. Or
 
 > ## Can you fix the problem using brackets?
-> Use some trial and error, changing varaibles if it is not clear to you why the code is not working as intended.
+> Tip - Change some variables. If it is not clear to you why the code is not working as intended use some trial and error to help you understand the precedences.
 {: .challenge }
 
 ### Keeping things clear
-It is possible to put conditional statements inside conditional statements these are then referred to as 'nested'. If your code becomes overly nested it can impact readability and maintainability. It is good practice to keep your workflow as simple as possible, this can be made easier by spending time on design and regular refactoring.
+It is possible to put conditional statements inside conditional statements, these are then referred to as 'nested'. If your code becomes overly 'nested' it can severely impact code readability and maintainability. It is good practice to keep your workflow as simple as possible, this can be made easier by spending time on design and regular refactoring.
 
 Note: Refactoring is the process of restructuring code, not to change the functionality but to improve factors like readability, maintainability, efficiency.
 
