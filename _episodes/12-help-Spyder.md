@@ -94,7 +94,7 @@ From the Script pane bar select 'tabularexample.py'.
 > You may need 'pip install pandas' and 'pip install matplotlib'.
 {: .challenge }
 
-Once you have installed the libraries, you should be able to run this example. If you check the Plots Pane, you should see a plot illustrating the relationship between petal length and petal width in the dataset.
+Once you have installed the libraries, you should be able to run this example. If you check the Plots Pane, you should see a plot illustrating the relationship between petal length and petal width from the IRIS dataset.
 
 >## Tip
 >* **We can make plotting display in a new window**  

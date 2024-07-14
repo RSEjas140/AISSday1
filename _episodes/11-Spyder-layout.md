@@ -61,8 +61,6 @@ Much of your initial learning time in Python will be spent in the Python interac
 >The plots pane in Spyder is used to interact with graphical output from your Python code. You can visualize, explore, manage, and export data plots.
 >* **Help pane:**  
 >The help pane serves as a valuable resource for learning about Python programming, exploring package functionality, troubleshooting issues, and finding answers to your questions. 
->* **Files pane:**  
->The files pane in Spyder provides a straightforward way to navigate and manage files and directories within your project. 
 {: .callout}
 
 >## Far Left 

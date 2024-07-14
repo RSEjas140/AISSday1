@@ -1,5 +1,5 @@
 ---
-title: "Re-visiting tabular example"
+title: "Re-visiting 'tabularexample.py'"
 teaching: 10
 exercises: 5
 questions:

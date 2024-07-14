@@ -1,5 +1,5 @@
 ---
-title: "Re-visiting image example"
+title: "Re-visiting 'imageexample.py'"
 teaching: 5
 exercises: 30
 questions:

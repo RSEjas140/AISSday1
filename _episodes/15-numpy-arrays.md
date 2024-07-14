@@ -55,10 +55,11 @@ num_sequence = np.linspace(0, 1, num=11)
 
 Congratulations, we now have four arrays. Are they what you were expecting? Type the variable names into the console to get an output of their contents.
 
-Can you determine how each one works?
-1. np.arange()
-2. np.full() 
-3. np.linspace()
+> ## Can you determine how each one works?
+>1. np.arange()
+>2. np.full() 
+>3. np.linspace()
+{: .challenge }
 
 You can always look them up using the NumPy documentation if you are not sure.
 

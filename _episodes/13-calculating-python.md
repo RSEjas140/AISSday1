@@ -14,7 +14,7 @@ keypoints:
 ---
 
 ### Dipping our toes
-We have covered some relatively dry theory so let’s take some small steps and start interacting with Python. From the console we can start exploring calculation. Write in the following commands:
+Now let’s take some small steps and start interacting with Python. From the console we can start exploring calculation. Write in the following commands:
 
 ```
 10 – 5 #(subtraction) 
