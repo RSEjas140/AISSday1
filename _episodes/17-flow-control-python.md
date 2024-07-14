@@ -91,7 +91,7 @@ We have encountered '==', which is used to check for equivalence. There are othe
 - == Equal to
 - != Not equal to
 
-## Question: What is the difference?
+> ## Question: What is the difference?
 > Between these two code snippets:
 {: .challenge }
 
