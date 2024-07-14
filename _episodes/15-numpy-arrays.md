@@ -142,9 +142,9 @@ temperatures[above_70] += 10
 {: .languge.python}
 
 > ### Remember
-> **temperatures[above_70] += 10**  
+> temperatures[above_70] += 10  
 > Is the equivalent of  
-> **temperatures[above_70] = temperatures[above_70] + 10**
+> temperatures[above_70] = temperatures[above_70] + 10
 {: .callout}
 
 This is an example of how we can modify arrays but you will discover there are many different ways to address and manipulate arrays. What you are going to use will be based on your desired outputs.
