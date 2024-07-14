@@ -10,7 +10,7 @@ objectives:
  - "Confident assigning variables"
  - "Understand different data types"
 keypoints:
- - "When naming variables it's important be consistent and succinct"
+ - "When naming variables it's important be consistent and succinct, future you and collaborators will thank you"
  - "Output assignment has to be explicit to keep the result of an operation"
  - "Python may make assumptions about data types unless you are explicit"
 ---
@@ -87,15 +87,18 @@ When you check the variable again in the variable explorer tab you should now no
 
 > ## Question: What alternative did we see in '*textexample.py*'?
 > You may remember this line:
+
 > '*word_dict[word] += 1*'
+
 > This is the equivelent of saying '*word_dict[word] = word_dict[word] + 1*'
+
 > How could we edit '*x = x + 5*' to take advantage of this shorthand
 {: .challenge }
 
-## Variable naming
-
-{% include figure.html max-width="100%" file="/fig/variablenaming.png" 
+{% include figure.html max-width="50%" file="/fig/variablenaming.png" 
 alt="How variable naming works" caption="Figure: How variable naming works" %}
+
+## Variable naming
 
 Variable naming is important but often overlooked by new programmers (and experienced programmers). It is not trivial to think of meaningful concise variable names. The first thing to understand is that Python has some restrictions and rules for variable naming:  
 

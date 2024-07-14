@@ -4,18 +4,21 @@ teaching: 15
 exercises: 5
 questions:
 - "What other data structures are there?"
+- "Why are there other data structures?"
 objectives:
-- "Understand the use of lists and dictionaries in Python."
+- "Understand some of the uses for lists and dictionaries in Python."
+- "Start thinking about why we need to store data in different structures"
 keypoints:
 - "Dictionaries: Efficient for fast key-based retrieval and storing data with unique identifiers."
 - "Lists: Versatile collections for storing ordered heterogeneous data types with various operations like indexing and appending."
+- "Different data structures solve different problems. You don’t need to know every data structure and its advantages and disadvantages, but understanding this concept will help you know what questions to ask when you start storing your own data."
 ---
 
 ## Lists
 
 - Lists are ordered collections of items, which can be of any data type.
 - They are mutable, meaning their elements can be changed after creation.
-- Lists are created using square brackets \[\].
+- Lists are created using square brackets '\[ \]'.
 
 Example of list creation:
 ```
@@ -24,7 +27,7 @@ my_list = [1, 2, 3, 'apple', 'banana', 'cherry']
 {: .language-python}
 
 ### Indexing and accessing elements:
-- Elements in a list are accessed using square brackets \[\] and indices (e.g. my_list\[4\]).
+- Elements in a list are accessed using square brackets '\[ \]' and indices (e.g., my_list\[4\]).
 - Indexing starts from 0 for the first element.
 
 ```
