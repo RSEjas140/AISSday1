@@ -1,6 +1,6 @@
 ---
 title: "Flow control"
-teaching: 30
+teaching: 25
 exercises: 10
 questions:
 - "How do we get our code to react dynamically?"

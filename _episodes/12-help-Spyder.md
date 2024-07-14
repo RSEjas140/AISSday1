@@ -77,7 +77,7 @@ pip install opencv-python
 
 Type this command into the console and give Spyder time to find and install the package. If the installation is successful, you should now be able to run the code. When it runs you should be presented with an image of some jute leaves. Pressing any button will replace the jute leaves with an image now showing only the lines that have detected in the image.
 
-{% include figure.html max-width="100%" file="/fig/leaves.png" 
+{% include figure.html max-width="75%" file="/fig/leaves.png" 
 alt="Leaves and the lines in the leaves image" caption="Figure: The two outputs you should see when running imageexample.py" %}
 
 
