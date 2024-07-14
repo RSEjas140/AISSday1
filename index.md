@@ -19,7 +19,7 @@ This contains all the day one content for the AI Summer School. We will cover a 
 * What kind of problem you can solve
 * What additional help you may need
 
-FAQ sessions: demonstrators/attendees email jas140@aber.ac.uk with any good,common,difficult questions and we will collate and answer.
+FAQ sessions: demonstrators/attendees email jas140@aber.ac.uk with any good, common, or difficult questions and we will collate and answer.
 
 > ## Prerequisites
 >
