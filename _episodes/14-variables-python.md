@@ -95,7 +95,7 @@ When you check the variable again in the variable explorer tab you should now no
 > How could we edit '*x = x + 5*' to take advantage of this shorthand
 {: .challenge }
 
-{% include figure.html max-width="50%" file="/fig/variablenaming.png" 
+{% include figure.html max-width="70%" file="/fig/variablenaming.png" 
 alt="How variable naming works" caption="Figure: How variable naming works" %}
 
 ## Variable naming
