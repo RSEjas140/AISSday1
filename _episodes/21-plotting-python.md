@@ -1,5 +1,5 @@
 ---
-title: "Plotting in Python with Matplotlib"
+title: "Re-visiting tabular example"
 teaching: 10
 exercises: 5
 questions:

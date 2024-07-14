@@ -1,5 +1,5 @@
 ---
-title: "Re-visiting our examples"
+title: "Re-visiting text example"
 teaching: 5
 exercises: 5
 questions:

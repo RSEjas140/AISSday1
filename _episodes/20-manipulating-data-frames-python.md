@@ -1,7 +1,7 @@
 ---
-title: "Pandas and manipulating data frames"
-teaching: 20
-exercises: 10
+title: "Re-visiting image example"
+teaching: 5
+exercises: 30
 questions:
 - "How do I manage tabular data efficiently?"
 objectives:

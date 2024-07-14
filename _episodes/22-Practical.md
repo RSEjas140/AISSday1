@@ -1,5 +1,5 @@
 ---
-title: "Practical session"
+title: "Practical session - Getting my data into Python"
 teaching: 10
 exercises: 120
 questions:
