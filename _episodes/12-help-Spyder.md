@@ -99,11 +99,8 @@ Once you have installed the libraries, you should be able to run this example. I
 {: .callout}
 
 {% include figure.html max-width="100%" file="/fig/inline.png" 
-alt="Spyder iconsole pane" caption="Figure: How to change plots to an external pane" %}
-
-
-Here is the revised text with improved clarity, UK spelling, and grammar:
-
+alt="Spyder iconsole pane" caption="Figure: How to change plots to an external pane" %}  
+  
 Run the code again (you may need to restart Spyder), and the plot should now generate in a new window that you may find easier to manipulate/view.
 
 
