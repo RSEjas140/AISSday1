@@ -88,12 +88,12 @@ When you check the variable again in the variable explorer tab you should now no
 > ## Question: What alternative did we see in '*textexample.py*'?
 > You may remember this line:
 >
-> '*word_dict[word] += 1*'
+> '*word_dict\[word\] += 1*'
 >
-> This is the equivalent of saying '*word_dict[word] = word_dict[word] + 1*'
+> This is the equivalent of saying '*word_dict\[word\] = word_dict\[word\] + 1*'
 >
 > How could we edit '*x = x + 5*' to take advantage of this shorthand?
-> {:.challenge}
+{: .challenge}
 
 {% include figure.html max-width="70%" file="/fig/variablenaming.png" 
 alt="How variable naming works" caption="Figure: How variable naming works" %}
