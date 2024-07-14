@@ -142,7 +142,7 @@ temperatures[above_70] += 10
 {: .languge.python}
 
 > ## Remember
-> * temperatures[above_70] += 10
+> * temperatures[above_70] += 10  
 > Is the equivalent of
 > * temperatures[above_70] = temperatures[above_70] + 10
 {: .callout}
