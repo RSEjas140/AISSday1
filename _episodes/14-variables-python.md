@@ -103,13 +103,13 @@ alt="How variable naming works" caption="Figure: How variable naming works" %}
 Variable naming is important but often overlooked by new programmers (and experienced programmers). It is not trivial to think of meaningful concise variable names. The first thing to understand is that Python has some restrictions and rules for variable naming:  
 
  
-* Variable names are cases-sensitive (My_name is different to my_name).  
+* **Variable names are cases-sensitive (My_name is different to my_name).**
 
-* They must start with a letter or an underscore. 
+* **They must start with a letter or an underscore.** 
 
-* They can consist of letters, numbers, periods, and underscores.  
+* **They can consist of letters, numbers, and underscores.**  
 
-* There are reserved words (e.g., ‘else’, ‘for’) that cannot be used for naming variables as they are already used by Python for specific purposes.  
+* **There are reserved words (e.g., ‘else’, ‘for’) that cannot be used for naming variables as they are already used by Python for specific purposes.**  
 
  
 It may seem fussy but there are actually not that many enforced restrictions compared to the number of variable naming combinations. However, just because you can, doesn’t mean you should. There exist several naming conventions in the Python community to help provide structure and guidance to variable naming. 
@@ -118,7 +118,7 @@ It may seem fussy but there are actually not that many enforced restrictions com
 
 1. my_variable (underscore or snake case) 
 
-2. myVariable (camel case) 
+2. myVariable (camelCase) 
 
  
 
