@@ -15,7 +15,7 @@ keypoints:
 - "Plan and refactor your code regularly."
 ---
 
-Often, we want to perform different operations in our code based upon dynamic conditions. To explore this idea, we are going to pretend we have two sensors. The first representing a temperature, and the second representing if there is rainfall. Our temperature is a numeric value, and our rainfall is a boolean. To declare those variables, type into the script:
+Often, we want to perform different operations in our code based on dynamic conditions. To explore this idea, we are going to pretend we have two sensors. The first representing a temperature, and the second representing if there is rainfall. Our temperature is a numeric value, and our rainfall is a boolean. To declare those variables, type into the script:
 
 ```
 temp_reading = 16 
@@ -31,14 +31,14 @@ if rainfall == True:
 ```
 {: .languge.python}
 
-Run the script using the run button (little green play button) above the script pane.
+Run the script using the run button (little green play button) above the script pane. You should see.
 
 ```
 "Advise user to take an umbrella"
 ```
 {: .output}
 
-From observing the output in the console and from a brief inspection of the code, it should be evident that we are evaluating the variable rainfall. Specifically, we are checking if it is True. If the outcome is of the check is valid, then we perform any code within the indented block.
+From observing the output in the console and from a brief inspection of the code, it should be evident that we are evaluating the variable rainfall. Specifically, we are checking if it is True. If the condition is valid, then we perform any code within the indented block.
 
 {% include figure.html max-width="100%" file="/fig/ifflow1.png" 
 alt="Flow diagrame for if condition" caption="Figure 1: Flow diagram for an *if* condition" %}
@@ -81,6 +81,7 @@ Our code now reacts differently to different input values. You can combine if, e
 - 'elif' – Extends an 'if' statement to check a condition only if the previous 'if' or 'elif' condition was resolved as false.
 - 'else' – Extends an 'if' statement, will execute if none of the preceding 'if' conditions are true.
 
+
 ### Comparison operators
 We have encountered '==', which is used to check for equivalence. There are other comparison operators available to us.
 - \> Greater than
@@ -90,11 +91,32 @@ We have encountered '==', which is used to check for equivalence. There are othe
 - == Equal to
 - != Not equal to
 
+> ## Question: What is the difference?
+> Between:  
+
+> 'if rainfall:
+    print("Advise user to take an umbrella")  
+> if temp_reading < 15:
+    print("Advise user to take a coat")  
+> else:'
+    print("Advise user to enjoy their walk")'
+> and  
+
+> 'if rainfall:
+    print("Advise user to take an umbrella")  
+> elif temp_reading < 15:
+    print("Advise user to take a coat")  
+> else:'
+    print("Advise user to enjoy their walk")'
+{: .challenge }
+
+
 ### Boolean operators
 
+* **not**: The not operator returns True if the operand is False, and False if the operand is True. 
 * **and**: The and operator returns True if both operands are True, otherwise it returns False.
 * **or**: The or operator returns True if at least one of the operands is True, otherwise it returns False. 
-* **not**: The not operator returns True if the operand is False, and False if the operand is True. 
+
 
 Replace the code in your script with this (keeping the variables):
 
@@ -162,7 +184,36 @@ friday
 ```
 {: .output}
 
-For loops are commonly used in Python for iterating over sequences, performing repetitive tasks, and processing collections of data.
+For loops are commonly used in Python for iterating over sequences, performing repetitive tasks, and processing collections of data.  
+
+We are going to combine some concepts together, look at different uses of key words, and try and catch a very common mistake. Consider the following code.
+
+```
+rainfall = True
+temp = 8
+day = 'mon'  
+daysoff = ['sat','sun']  
+
+# we want to stay at home if we are not working and the weather is rainy or cold  
+if day in daysoff and rainfall or temp < 10:  
+    print("stay home")  
+else:  
+    print("you have to leave the house")
+```
+{: .languge.python}
+
+> ## Question: Can you catch the problem here?
+> Why is this not performing how we would expect?
+{: .challenge }
+
+Boolean operators have an order of operations in Python (think back to PEDMAS). The order of precedence is the same as we introduced them earlier. 
+* Not
+* And
+* Or
+
+## Can you fix the problem using brackets?
+> Use some trial and error, changing varaibles if it is not clear to you why the code is not working as intended.
+{: .challenge }
 
 ### Keeping things clear
 It is possible to put conditional statements inside conditional statements these are then referred to as 'nested'. If your code becomes overly nested it can impact readability and maintainability. It is good practice to keep your workflow as simple as possible, this can be made easier by spending time on design and regular refactoring.

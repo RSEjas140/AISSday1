@@ -86,11 +86,11 @@ x = x + 5
 When you check the variable again in the variable explorer tab you should now notice that it is 15. This is a key concept to recognise; we can perform an operation and the resulting output will be shown but unless we explicitly assign it the change will not be saved.
 
 > ## Question: What alternative did we see in '*textexample.py*'?
-> You may remember this line:
+> You may remember this line:  
 
-> '*word_dict[word] += 1*'
+> '*word_dict[word] += 1*'  
 
-> This is the equivelent of saying '*word_dict[word] = word_dict[word] + 1*'
+> This is the equivelent of saying '*word_dict[word] = word_dict[word] + 1*'  
 
 > How could we edit '*x = x + 5*' to take advantage of this shorthand
 {: .challenge }

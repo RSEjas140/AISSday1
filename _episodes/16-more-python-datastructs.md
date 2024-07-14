@@ -100,7 +100,7 @@ my_dict['city'] = 'Los Angeles' # Updates the value of 'city' key to 'Los Angele
 Lists are like an ordered group of things where you can easily get the item by its position.
 Dictionaries are like a phone book where you can easily find a value if you have the key.
 
-> ## How would have counting the words in the text example have worked if we had used a list?
-> Think about how we would have checked if a word existed in our list?
+> ## How would have counting the words in the 'textexample.py' would work if we had used a list?
+> Think about how we would have to check if the word existed in our list?
 {: .challenge}
 
