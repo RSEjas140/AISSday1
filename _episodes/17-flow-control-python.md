@@ -93,21 +93,20 @@ We have encountered '==', which is used to check for equivalence. There are othe
 
 ## Question: What is the difference?
 > Between:  
-
 > 'if rainfall:
-    print("Advise user to take an umbrella")  
+>    print("Advise user to take an umbrella")  
 > if temp_reading < 15:
-    print("Advise user to take a coat")  
+>    print("Advise user to take a coat")  
 > else:'
-    print("Advise user to enjoy their walk")'
+>    print("Advise user to enjoy their walk")'
 > and  
-
+>
 > 'if rainfall:
-    print("Advise user to take an umbrella")  
+>    print("Advise user to take an umbrella")  
 > elif temp_reading < 15:
-    print("Advise user to take a coat")  
+>    print("Advise user to take a coat")  
 > else:'
-    print("Advise user to enjoy their walk")'
+>    print("Advise user to enjoy their walk")'
 {: .challenge }
 
 
