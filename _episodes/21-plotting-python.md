@@ -1,50 +1,58 @@
 ---
-title: "Re-visiting 'tabularexample.py'"
+title: "Re-visit 'tabularexample.py'"
 teaching: 10
 exercises: 5
 questions:
-- "How do I create plots?"
-- "How do I use data sets to populate my plot?"
+- "How does the tabularexample.py file work?"
 objectives:
-- "Understand how plots are formed syntactically in Matplotlib."
-- "Can create plots from data sets."
+- "You can understand what each line in achieving."
 keypoints:
-- "Plotting is a useful tool for understanding our data; it is not just for results visualization."
+- "Image can be represented as numeric values"
+- "Don't reinvent the wheel"
+- "Use functions anytime you have highly repetative code"
 ---
 
-## Plotting
-
-Plotting our data is one of the best ways to intuitively explore it, and the various relationships between variables. While there are several libraries available for plotting in Python, we'll be using Matplotlib because it is versatile and widely used. Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Let's start by exploring a simple example using Matplotlib in Python. Make sure you have Matplotlib installed in your Python environment:
+### What is going on? (line by line)
 
 ```
-pip install matplotlib
-import matplotlib.pyplot as plt
+#read data from csv
+iris = pd.read_csv("data/iris.csv")
 ```
 {: .language-python}
 
+* function: **read_csv**  
+We use Pandas to read in a csv given a file path.
+
+
 ```
-plt.figure(figsize=(8, 6))
-plt.scatter(iris_df['sepal.length'], iris_df['sepal.width'])
-plt.xlabel('Sepal Length (cm)')
-plt.ylabel('Sepal Width (cm)')
-plt.title('Sepal Length vs Sepal Width')
-plt.show()
+print(iris.head())
 ```
 {: .language-python}
 
-To give you more freedom you can plot into a seperate window.
+* Function: **head()**
 
-1. Go to the "Tools" menu and select "Preferences" (on Windows/Linux) or "Spyder" menu and select "Preferences" (on macOS).
-2. In the Preferences dialog, navigate to the "IPython console" section.
-3. Click on the "Graphics" tab.
-4. Make sure that the "Inline backend" option is unchecked.
+Displays top 5 lines from the dataframe. We are going to spend a lot of tomorrow looking at Pandas and dataframes.
 
-### More plotting
+```
+colour_map = {'Setosa': 'red', 'Versicolor': 'green', 'Virginica': 'blue'}
+#create a list of colours to use for scatter plot
+colours = iris['variety'].map(colour_map)
+```
+{: .language-python}
+ 
+We create a dictionary(colour_map), with key(variaty) and value(colour). This is so we can map the variety to our plotted data and generate a list(colours) based on the values in the 'variety' column in the dataset.
 
-There are many different type of plots, if you need a specific kind of plot a good place to start is the super helpful cheat sheet on Matplotlib. To explore all the different options you can to these cheat sheets:
+```
+iris.plot.scatter('petal.length','petal.width', c = colours)
+```
+{: .language-python}
+
+* Function: **.plot.scatter(x,y)**  
+We provide the column names for the data we want to display and then the colours related to those data points. 
 
 
-[Plotting in Matplotlib cheat sheet](https://images.datacamp.com/image/upload/v1676360378/Marketing/Blog/Matplotlib_Cheat_Sheet.pdf)  
-[Matplotlib cheat sheet](https://matplotlib.org/cheatsheets/cheatsheets.pdf)
+> ## Do you have any questions?
+> Take some time to explore, and understand this example. You may want to look up the cv2 functions to discover what other parameters they take. Are there any questions you need to ask to fully understand? 
+{: .challenge}
 
 
