@@ -7,7 +7,7 @@ questions:
 objectives:
 - "You can understand what each line in achieving."
 keypoints:
-- "Image can be represented as numeric values"
+- "Images can be represented as numeric values"
 - "Don't reinvent the wheel"
 - "Use functions anytime you have highly repetative code"
 ---

@@ -7,9 +7,8 @@ questions:
 objectives:
 - "You can understand what each line in achieving."
 keypoints:
-- "Image can be represented as numeric values"
-- "Don't reinvent the wheel"
-- "Use functions anytime you have highly repetative code"
+- "Tabular data can be massive; pandas DataFrames are a great way to deal with this data."
+- "Plotting is a really useful analysis tool as well as a way of producing clean-looking figures."
 ---
 
 ### What is going on? (line by line)
@@ -21,8 +20,7 @@ iris = pd.read_csv("data/iris.csv")
 {: .language-python}
 
 * function: **read_csv**  
-We use Pandas to read in a csv given a file path.
-
+We are using pandas to read in a CSV file given a file path. There are a huge number of different files with custom delimiters that pandas can read.
 
 ```
 print(iris.head())
@@ -31,7 +29,7 @@ print(iris.head())
 
 * Function: **head()**
 
-Displays top 5 lines from the dataframe. We are going to spend a lot of tomorrow looking at Pandas and dataframes.
+This function displays the top 5 lines from the DataFrame. We are going to spend a lot of time tomorrow exploring DataFrames, learning how to manipulate them, and how to display the data they contain.
 
 ```
 colour_map = {'Setosa': 'red', 'Versicolor': 'green', 'Virginica': 'blue'}
@@ -40,15 +38,14 @@ colours = iris['variety'].map(colour_map)
 ```
 {: .language-python}
  
-We create a dictionary(colour_map), with key(variaty) and value(colour). This is so we can map the variety to our plotted data and generate a list(colours) based on the values in the 'variety' column in the dataset.
-
+We created a dictionary (colour_map), with keys (variety) and values (colour). This allows us to map the variety to our plotted data and generate a list (colours) based on the values in the 'variety' column in the dataset.
 ```
 iris.plot.scatter('petal.length','petal.width', c = colours)
 ```
 {: .language-python}
 
 * Function: **.plot.scatter(x,y)**  
-We provide the column names for the data we want to display and then the colours related to those data points. 
+We provide the column names for the data we want to display, along with the colours we want the data displayed as. Plot.scatter() then generates a scatter plot for that information.   
 
 
 > ## Do you have any questions?
