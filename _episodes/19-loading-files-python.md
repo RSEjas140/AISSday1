@@ -1,6 +1,6 @@
 ---
 title: "Re-visiting 'textexample.py'"
-teaching: 5
+teaching: 10
 exercises: 5
 questions:
 - "How do I load my own data into Spyder?"

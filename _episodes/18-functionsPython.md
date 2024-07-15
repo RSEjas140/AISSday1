@@ -1,6 +1,6 @@
 ---
 title: "Functions"
-teaching: 25
+teaching: 15
 exercises: 10
 questions:
 - "How do I make my own functions?"
@@ -36,7 +36,7 @@ def function_name(parameter1, parameter2, ...):
 ## Features of functions
 
 ### Immutable vs Mutable
-In Python, function arguments are 'passed by assignment'. This means that when you pass a variable to a function, you are passing a reference to the object that the variable refers to. A function can modify the passed object if the object is mutable (e.g., lists, dictionaries) and can not be modified if the object is immutable (e.g., integers, floats, strings).  
+In Python, function arguments are 'passed by assignment'. This means that when you pass a variable to a function, you are passing a reference to the object that the variable refers to. A function can modify the passed object if the object is mutable (e.g., lists, dictionaries), but it cannot modify the object if it is immutable (e.g., integers, floats, strings). 
 
 ```python
 def my_func(x):
@@ -73,7 +73,7 @@ print(my_list)
 
 ### Lambda fuctions
 
-Lambda functions in Python are small, anonymous functions defined with the **lambda** keyword. They are often used for short, simple functions that are not worth defining with a full def statement. 
+Lambda functions in Python are small, anonymous functions defined with the **lambda** keyword. They are often used for short, simple functions that are not worth defining with a full **def** statement. 
 
 Lambda syntax:
 ```python
@@ -82,14 +82,20 @@ lambda arguments: expression
 
 Lambda example:
 
-We have seen a lambda function in our 'textexample.py' which was 'lambda item: item\[1\]'. This was part of the sort function and what we were providing was the element to sort by. If given an item from the dictionary (item = key,value) return item[1], the value. This is because we wanted to sort by he value (in this case the number of occurances). 
+We have seen a lambda function in our 'textexample.py' which was 
+
+```python
+'lambda item: item\[1\]'
+```
+
+This was part of the sorting function we used to find the most common words in the text. The lambda functions role was to select the part of the item we wanted to sort the items by. If given an item from the dictionary (item = 0 key, 1 value) then provide item\[1\], the value. 
 
 ### Default arguments
 
-You will recieve an error if you do not provide the expected number of arguments to a function. However, default arguments in Python allow you to specify default values for one or more parameters of a function. If an argument for a parameter with a default value is not provided during the function call, the function uses the default value. It is important to know this for when you write your own functions but also if you are using libraries that you are aware there might be default values being used.
+If you do not provide the expected number of arguments to a function you will recieve an error. However, default arguments in Python allow you to specify default values for one or more parameters of a function. If an argument for a parameter with a default value is not provided during the function call, the function uses the default value. It is important to know this for when you write your own functions but also if you are using libraries that you are aware there might be default values being used.
 
 ```python
-def my_greeting_func(name, greeting = "hello"):
+def my_greeting_func(name, greeting = "Hello"):
     # this is an example of f-string it is a more advanced but more efficient way to create and print a formatted string.
     print(f"{greeting}, {name}!")
 
@@ -139,5 +145,7 @@ mf.celc_to_fahr(14)
 {: .language-python}
 
 We can now run this function from my_first_script.
+
+### Why is this important?
 
 Wherever significant duplication exists in your code, it's advisable to create a function to replace it. This approach promotes code reusability, readability, and maintainability. If you have generalised functions that you use often in different scripts, it is good practice to store them in a script file. You can then import them into any project that you need them for. This reduces rewriting and editing code, and decreases the chance of introducing errors such as typos or calculation errors.

@@ -101,6 +101,7 @@ Lists are like an ordered group of things where you can easily get the item by i
 Dictionaries are like a phone book where you can easily find a value if you have the key.
 
 > ## How would have counting the words in the 'textexample.py' would work if we had used a list?
-> Think about how we would have to check if the word existed in our list?
+> Think about how we would have to check if the word existed in our list?  
+> If you are confident to do so you can consider the run-time implications.
 {: .challenge}
 

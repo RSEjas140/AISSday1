@@ -1,7 +1,7 @@
 ---
 title: "Re-visiting 'imageexample.py'"
-teaching: 5
-exercises: 30
+teaching: 10
+exercises: 5
 questions:
 - "How do I manage tabular data efficiently?"
 objectives:
