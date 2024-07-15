@@ -7,7 +7,7 @@ questions:
 objectives:
 - "You can understand what each line in achieving."
 keypoints:
-- "Different ways to deal with inputs based on type, size, and complexity"
+- "Different ways to deal with text inputs based on type, size, and complexity"
 - "Different data structures for different tasks"
 ---
 

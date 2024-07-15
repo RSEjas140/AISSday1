@@ -1,120 +1,76 @@
 ---
-title: "Re-visiting 'imageexample.py'"
+title: "Re-visit 'imageexample.py'"
 teaching: 10
 exercises: 5
 questions:
-- "How do I manage tabular data efficiently?"
+- "How does the imageexample.py file work?"
 objectives:
-- "Understand how Pandas can be used to store, manipulate and subset tabular data."
+- "You can understand what each line in achieving."
 keypoints:
-- "Pandas provides powerful data structures like Series and DataFrame for easy manipulation and analysis of structured data."
-- "It offers extensive functionality for data cleaning, selection, transformation, and integration with other libraries like NumPy and Matplotlib."
-- "With Pandas, you can efficiently handle data tasks such as handling missing values, merging datasets, and preparing data for machine learning models."
+- "Image can be represented as numeric values"
+- "Don't reinvent the wheel"
+- "Use functions anytime you have highly repetative code"
 ---
 
-## Inspecting Datasets
-Pandas is a Python library for data manipulation and analysis, providing powerful data structures like DataFrame and Series along with a wide range of functions for tasks such as data cleaning, preparation, and exploration. It is widely used in data science and machine learning workflows for its ease of use and flexibility.
-
-We can now explore the Iris dataset to gain insights into its structure and contents.
-
-### Inspecting a Dataset
-To understand the structure of the Iris dataset, we can use various methods provided by Pandas:
+### What is going on? (line by line)
 
 ```
-print(iris_df.head())
-```
-{: .language-python}
+# my function for displaying images
+def show_image(img):
+    """ docstring
+    Pass in an image and it will be displayed until you press any key
 
-```
-print(iris_df.info())
-```
-{: .language-python}
+    Parameters
+    ----------
+    img : Array
+        Image we want to display.
 
-```
-print(iris_df.describe())
-```
-{: .language-python}
+    Returns
+    -------
+    None.
 
-Understanding the contents and data types of a data set is important for accurate analysis.
-
-### Manipulating DataFrames
-Pandas provides powerful functionalities to manipulate DataFrames. Here are some examples:
-
-Adding and Removing Columns
-
-Adding:
-```
-iris_df['sepal.ratio'] = iris_df['sepal.length'] / iris_df['sepal.width']
+    """    
+    #show image
+    cv2.imshow('image', img)
+    #wait until a key is pressed
+    cv2.waitKey(0)
+    #close image
+    cv2.destroyAllWindows()
 ```
 {: .language-python}
 
-Removing:
+* Keyword: **def**  
+We know now that we are *def*ining a function. We will use this function to display the images we load in.
+
+The following lines among the """ are docstring. They document how the function works and are really important to help future you understand your code and other collaborators. 
+
 ```
-iris_df.drop('variety', axis=1, inplace=True)
+image = cv2.imread("data/crop_images/jute/jute018a.jpeg")
 ```
 {: .language-python}
 
-Adding and removing rows
+* Function: **imread()**
 
-Adding:
+Read image in as an array based on a given file path.
+
 ```
-new_row = {'sepal.length': 5.1, 'sepal.width': 3.5, 'petal.length': 1.4, 'petal.width': 0.2,}
-iris_df.loc[len(iris_df)] = new_row
+grey_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+```
+{: .language-python}
+ 
+* Function: **cvtColor**
+
+Convert the image to greyscale.
+
+```
+edges = cv2.Canny(grey_image, 100, 200)
 ```
 {: .language-python}
 
-Removing:
-```
-iris_df.drop(0, inplace=True)
-iris_df.reset_index(drop=True, inplace=True)
-```
-{: .language-python}
+* Function: **Canny**  
+Use canny edge detection to identify edges.
 
 
-### Subsetting Data
-
-Subsetting allows us to select specific rows or columns based on conditions:
-
-```
-iris_df = pd.read_csv("data/iris.csv") #reset the dataset
-# Select rows where petal_length is greater than 5
-subset_df = iris_df[iris_df['petal.length'] > 5]
-```
-{: .language-python}
-
-```
-# Select rows where species is 'setosa' and petal_length is less than 1.5
-subset_df = iris_df[(iris_df['variety'] == 'Setosa') & (iris_df['petal.length'] < 1.5)]
-```
-{: .language-python}
-
-```
-# Select rows where sepal_length is greater than 5 and species is either 'setosa' or 'versicolor'
-subset_df = iris_df[(iris_df['sepal.length'] > 5) & (iris_df['variety'].isin(['Setosa', 'Versicolor']))]
-```
-{: .language-python}
-
-```
-# Select rows where species is 'setosa' or 'versicolor' and petal_length is not equal to 1.5
-subset_df = iris_df[(iris_df['variety'].isin(['Setosa', 'Versicolor'])) & (iris_df['petal.length'] != 1.5)]
-```
-{: .language-python}
-
-
-### Applying a function
-
-To apply a function to a DataFrame column in Pandas, you can use the .apply() method.
-
-```
-# Define a custom function
-def square_value(x):
-    return x ** 2
-```
-{: .language-python}
-
-```
-iris_df['petal.length.squared'] = iris_df['petal.length'].apply(square_value)
-```
-{: .language-python}
-
-Pandas is highly efficient for DataFrame manipulation due to its intuitive syntax and powerful functionalities. It offers a wide range of built-in functions for data selection, filtering, and transformation, making tasks like data cleaning and preprocessing streamlined. 
+> ## Do you have any questions?
+> Take some time to explore, and understand this example. You may want to look up the cv2 functions to discover what other parameters they take. Are there any questions you need to ask to fully understand? 
+{: .challenge}
