@@ -40,9 +40,8 @@ def show_image(img):
 {: .language-python}
 
 * Keyword: **def**  
-We know now that we are *def*ining a function. We will use this function to display the images we load in.
-
-The following lines among the """ are docstring. They document how the function works and are really important to help future you understand your code and other collaborators. 
+We know now that we are **def**ining a function. We will use this function to display the images we load in.
+The following lines among the """ are docstrings. They document how the function works and are really important to help future-you and other collaborators understand your code.
 
 ```
 image = cv2.imread("data/crop_images/jute/jute018a.jpeg")
@@ -51,7 +50,7 @@ image = cv2.imread("data/crop_images/jute/jute018a.jpeg")
 
 * Function: **imread()**
 
-Read image in as an array based on a given file path.
+Read an image in based on a given file path.
 
 ```
 grey_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -60,7 +59,7 @@ grey_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
  
 * Function: **cvtColor**
 
-Convert the image to greyscale.
+Convert the image into greyscale.
 
 ```
 edges = cv2.Canny(grey_image, 100, 200)
