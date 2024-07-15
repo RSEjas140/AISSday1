@@ -18,16 +18,16 @@ with open( "data/bed_time_stories/2. Who is the thief.txt", encoding='utf-8') as
 ```
 {: .language-python}
 
-Keyword: **with**
+* Keyword: **with**
 In Python this is used extensively for file handling.
 
-Function: **open**
+* Function: **open**
 We are going to open a file. We provide the file path and the encoding.
 
-Keyword: **as**
+* Keyword: **as**
 We need to name the file we are opening so it can be refered to in the code.
 
-Variable name: **story**
+* Variable name: **story**
 We choose this variable name for clarity (think back to variable naming).
 
 ```
@@ -37,7 +37,7 @@ for line in story:
 ```
 {: .language-python}
 
-Keyword: **for**
+* Keyword: **for**
 We know how for loops work now. We know we are going to iterate over every line in the story. We are then going to call a method on line to **split()** it into words.
 {: .callout}
 
@@ -54,7 +54,7 @@ We know how for loops work now. We know we are going to iterate over every line 
 ```
 {: .language-python}
  
-Keyword: **if**
+* Keyword: **if**
 
 We now know if the condition resolves as True we will execute the code underneath if, **else** we will execute the code underneath else. If the word is in the dictionary, incriment the occurances, otherwise, put the word in and set the count to 1.
 
@@ -66,7 +66,10 @@ print(sorted_by_occurance[:10])
 ```
 {: .language-python}
 
-Finally, we sort the items in the dictionary that is provided by **word_dict.items()**. We use the lambda to select the value. We put reverse as True because the default is sorting low to high. Then we print the results.
+* Keyword: **sorted**
+In-built Python sorting function, returns a new sorted list containing all items from an iterable. 
+
+This sort the items in the dictionary (provided by **word_dict.items()**). We use the lambda to select the value rather than the key. We put reverse as True because the default for sorted is in accending order (low to high). Then we print the resulting list at the indexs we want.
 
 > ## Do you have any questions?
 > Take some time to explore, and understand this example. What questions do you need to ask to fully understand? 
