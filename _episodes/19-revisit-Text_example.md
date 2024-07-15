@@ -1,11 +1,11 @@
 ---
-title: "Re-visiting 'textexample.py'"
+title: "Re-visit 'textexample.py'"
 teaching: 10
 exercises: 5
 questions:
 - "How does the textexample.py file work?"
 objectives:
-- "Can understand what each line in achieving."
+- "You can understand what each line in achieving."
 keypoints:
 - "Different ways to deal with inputs based on type, size, and complexity"
 - "Different data structures for different tasks"
@@ -18,16 +18,16 @@ with open( "data/bed_time_stories/2. Who is the thief.txt", encoding='utf-8') as
 ```
 {: .language-python}
 
-* Keyword: **with**
+* Keyword: **with**  
 In Python this is used extensively for file handling.
 
-* Function: **open**
+* Function: **open**  
 We are going to open a file. We provide the file path and the encoding.
 
-* Keyword: **as**
+* Keyword: **as**  
 We need to name the file we are opening so it can be refered to in the code.
 
-* Variable name: **story**
+* Variable name: **story**  
 We choose this variable name for clarity (think back to variable naming).
 
 ```
@@ -39,7 +39,6 @@ for line in story:
 
 * Keyword: **for**
 We know how for loops work now. We know we are going to iterate over every line in the story. We are then going to call a method on line to **split()** it into words.
-{: .callout}
 
 ```
         for word in words:
@@ -66,7 +65,7 @@ print(sorted_by_occurance[:10])
 ```
 {: .language-python}
 
-* Keyword: **sorted**
+* Keyword: **sorted**  
 In-built Python sorting function, returns a new sorted list containing all items from an iterable. 
 
 This sort the items in the dictionary (provided by **word_dict.items()**). We use the lambda to select the value rather than the key. We put reverse as True because the default for sorted is in accending order (low to high). Then we print the resulting list at the indexs we want.
