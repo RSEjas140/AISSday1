@@ -1,7 +1,7 @@
 ---
 title: "Practical session - Getting my data into Python"
 teaching: 10
-exercises: 50
+exercises: 45
 questions:
 - "Can you apply the theory to some practical problems?"
 objectives:
